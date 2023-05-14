@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE1D5B9C2A1113BB00EDB3BB /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D5B9B2A1113BB00EDB3BB /* Database.swift */; };
 		EEBCA4EC2A0CC2F300CE86E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBCA4EB2A0CC2F300CE86E3 /* AppDelegate.swift */; };
 		EEBCA4EE2A0CC2F300CE86E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBCA4ED2A0CC2F300CE86E3 /* SceneDelegate.swift */; };
 		EEBCA4F02A0CC2F300CE86E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBCA4EF2A0CC2F300CE86E3 /* ViewController.swift */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE1D5B9B2A1113BB00EDB3BB /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		EE1D5B9E2A1117EA00EDB3BB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		EEBCA4E82A0CC2F300CE86E3 /* url session.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "url session.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEBCA4EB2A0CC2F300CE86E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEBCA4ED2A0CC2F300CE86E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,11 +44,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE1D5B9D2A1117EA00EDB3BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE1D5B9E2A1117EA00EDB3BB /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EEBCA4DF2A0CC2F200CE86E3 = {
 			isa = PBXGroup;
 			children = (
 				EEBCA4EA2A0CC2F300CE86E3 /* url session */,
 				EEBCA4E92A0CC2F300CE86E3 /* Products */,
+				EE1D5B9D2A1117EA00EDB3BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +81,7 @@
 				EEBCA4F92A0CC2F500CE86E3 /* Info.plist */,
 				EEBCA4FF2A0CD47800CE86E3 /* Employee.swift */,
 				EEBCA5012A0CD63E00CE86E3 /* DetailsViewController.swift */,
+				EE1D5B9B2A1113BB00EDB3BB /* Database.swift */,
 			);
 			path = "url session";
 			sourceTree = "<group>";
@@ -144,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE1D5B9C2A1113BB00EDB3BB /* Database.swift in Sources */,
 				EEBCA4F02A0CC2F300CE86E3 /* ViewController.swift in Sources */,
 				EEBCA5002A0CD47800CE86E3 /* Employee.swift in Sources */,
 				EEBCA4EC2A0CC2F300CE86E3 /* AppDelegate.swift in Sources */,

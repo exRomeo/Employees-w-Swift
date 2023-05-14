@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-
+    
     @IBOutlet weak var tableView: UITableView!
     let networkIndicatior = UIActivityIndicatorView(style: .large)
     var dataArray: Array<Dictionary<String, Any>> = Array()
@@ -20,31 +20,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         networkIndicatior.startAnimating()
         view.addSubview(networkIndicatior)
         
-        // Do any additional setup after loading the view.
-        let url = URL(string: "https://dummy.restapiexample.com/api/v1/employees")
         
-        let req = URLRequest(url: url!)
-        
-        let session = URLSession(configuration: .default)
-        
-        let task = session.dataTask(with: req) {
-            (data , response, error) in
-            do {
-                //search for try! and try?
-                let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, Any>
-                self.dataArray = json["data"] as! Array<Dictionary<String, Any>>
+//        getEmployeesFromAPI()
+        getEmployeesFromDatabase()
 
-                DispatchQueue.main.async {
-
-                    self.networkIndicatior.stopAnimating()
-                    self.tableView.reloadData()
-                    
-                }
-            } catch {
-               print(error)
-            }
-        }
-        task.resume()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -72,10 +51,44 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        Database.instance.remove(employee: dataArray[indexPath.row])
         dataArray.remove(at: indexPath.row)
-        
         tableView.deleteRows(at: [indexPath], with: .fade)
     }
+    
+    
+    func getEmployeesFromAPI(){
+        // Do any additional setup after loading the view.
+        let url = URL(string: "https://dummy.restapiexample.com/api/v1/employees")
+        
+        let req = URLRequest(url: url!)
+        
+        let session = URLSession(configuration: .default)
+        
+        let task = session.dataTask(with: req) {
+            (data , response, error) in
+            do {
+                //search for try! and try?
+                let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, Any>
+                self.dataArray = json["data"] as! Array<Dictionary<String, Any>>
+                Database.instance.saveEmployees(employees: self.dataArray)
+                DispatchQueue.main.async {
 
+                    self.networkIndicatior.stopAnimating()
+                    self.tableView.reloadData()
+                    
+                }
+            } catch {
+               print(error)
+            }
+        }
+        task.resume()
+    }
+    
+    func getEmployeesFromDatabase(){
+        dataArray = Database.instance.select()
+        networkIndicatior.stopAnimating()
+        tableView.reloadData()
+    }
 }
 
