@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Reachability
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
@@ -19,10 +19,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         networkIndicatior.center = view.center
         networkIndicatior.startAnimating()
         view.addSubview(networkIndicatior)
-        
-        
-//        getEmployeesFromAPI()
-        getEmployeesFromDatabase()
+        do {
+            let reachability = try Reachability()
+            if reachability.connection == .unavailable {
+                getEmployeesFromDatabase()
+            } else {
+                getEmployeesFromAPI()
+            }
+        } catch {
+            print("couldnt create reachability instance")
+        }
 
     }
 

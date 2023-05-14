@@ -98,6 +98,8 @@ class Database {
         return employees
     }
     
+    
+    
     func remove(employee: [String: Any]) {
         let employee_id = Int32(employee[id] as! Int)
         let deleteString = "DELETE FROM Employees WHERE \(id) = \(employee_id)"
