@@ -57,6 +57,20 @@ final class Database {
         }
     }
     
+    class func update(from context: NSManagedObjectContext, employee: [String: Any]) {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Employees")
+        fetchRequest.predicate = NSPredicate(format: "id == %d", (employee[id] as! Int))
+        do{
+            let employees = try context.fetch(fetchRequest) as! [NSManagedObject]
+            employees[0].setValue(employee[name], forKey: name)
+            employees[0].setValue(employee[salary], forKey: salary)
+            employees[0].setValue(employee[age], forKey: age)
+            try context.save()
+        } catch {
+            print("Couldnt save Employee!")
+        }
+    }
+    
     
     
     class func remove(_ employee: [String: Any], from context:NSManagedObjectContext) {

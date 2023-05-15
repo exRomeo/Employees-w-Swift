@@ -11,6 +11,8 @@
 		EE1D5B9C2A1113BB00EDB3BB /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D5B9B2A1113BB00EDB3BB /* Database.swift */; };
 		EEAD7F3B2A118920008A4038 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAD7F3A2A118920008A4038 /* CoreData.framework */; };
 		EEAD7F3E2A118972008A4038 /* EmployeeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEAD7F3C2A118972008A4038 /* EmployeeModel.xcdatamodeld */; };
+		EEAD7F402A11B31B008A4038 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD7F3F2A11B31B008A4038 /* AddViewController.swift */; };
+		EEAD7F422A11B39E008A4038 /* EmployeeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD7F412A11B39E008A4038 /* EmployeeDelegate.swift */; };
 		EEBCA4EC2A0CC2F300CE86E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBCA4EB2A0CC2F300CE86E3 /* AppDelegate.swift */; };
 		EEBCA4EE2A0CC2F300CE86E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBCA4ED2A0CC2F300CE86E3 /* SceneDelegate.swift */; };
 		EEBCA4F02A0CC2F300CE86E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBCA4EF2A0CC2F300CE86E3 /* ViewController.swift */; };
@@ -29,6 +31,8 @@
 		EE1D5B9E2A1117EA00EDB3BB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		EEAD7F3A2A118920008A4038 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		EEAD7F3D2A118972008A4038 /* EmployeeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EmployeeModel.xcdatamodel; sourceTree = "<group>"; };
+		EEAD7F3F2A11B31B008A4038 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		EEAD7F412A11B39E008A4038 /* EmployeeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDelegate.swift; sourceTree = "<group>"; };
 		EEBCA4E82A0CC2F300CE86E3 /* url session.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "url session.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEBCA4EB2A0CC2F300CE86E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEBCA4ED2A0CC2F300CE86E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				EEBCA5012A0CD63E00CE86E3 /* DetailsViewController.swift */,
 				EE1D5B9B2A1113BB00EDB3BB /* Database.swift */,
 				EEAD7F3C2A118972008A4038 /* EmployeeModel.xcdatamodeld */,
+				EEAD7F3F2A11B31B008A4038 /* AddViewController.swift */,
+				EEAD7F412A11B39E008A4038 /* EmployeeDelegate.swift */,
 			);
 			path = "url session";
 			sourceTree = "<group>";
@@ -226,11 +232,13 @@
 			files = (
 				EE1D5B9C2A1113BB00EDB3BB /* Database.swift in Sources */,
 				EEBCA4F02A0CC2F300CE86E3 /* ViewController.swift in Sources */,
+				EEAD7F402A11B31B008A4038 /* AddViewController.swift in Sources */,
 				EEBCA5002A0CD47800CE86E3 /* Employee.swift in Sources */,
 				EEAD7F3E2A118972008A4038 /* EmployeeModel.xcdatamodeld in Sources */,
 				EEBCA4EC2A0CC2F300CE86E3 /* AppDelegate.swift in Sources */,
 				EEBCA4EE2A0CC2F300CE86E3 /* SceneDelegate.swift in Sources */,
 				EEBCA5022A0CD63E00CE86E3 /* DetailsViewController.swift in Sources */,
+				EEAD7F422A11B39E008A4038 /* EmployeeDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
