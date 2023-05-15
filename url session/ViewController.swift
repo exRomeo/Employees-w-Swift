@@ -28,16 +28,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         networkIndicatior.center = view.center
         networkIndicatior.startAnimating()
         view.addSubview(networkIndicatior)
-//        do {
-//            let reachability = try Reachability()
-//            if reachability.connection == .unavailable {
+        do {
+            let reachability = try Reachability()
+            if reachability.connection == .unavailable {
                 getEmployeesFromDatabase()
-//            } else {
-//                getEmployeesFromAPI()
-//            }
-//        } catch {
-//            print("couldnt create reachability instance")
-//        }
+            } else {
+                getEmployeesFromAPI()
+            }
+        } catch {
+            print("couldnt create reachability instance")
+        }
 
     }
 
