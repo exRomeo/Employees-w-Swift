@@ -9,6 +9,12 @@ import UIKit
 
 class DetailsViewController: UIViewController {
     
+    @IBOutlet weak var detailsLabel: UILabel!
+    
+    @IBOutlet weak var idLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var salaryLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
     var employee:Employee = Employee(id: 0, employee_name: "N/A", employee_salary: 0, employee_age: 0)
     @IBOutlet weak var employee_id: UILabel!
     @IBOutlet weak var employee_name: UILabel!
@@ -20,6 +26,12 @@ class DetailsViewController: UIViewController {
         employee_name.text = employee.employee_name
         employee_salary.text = String(employee.employee_salary)
         employee_age.text = String(employee.employee_age)
+        
+        detailsLabel.text = NSLocalizedString("detailsLabel", comment: "")
+        idLabel.text = NSLocalizedString("idLabel", comment: "")
+        nameLabel.text = NSLocalizedString("nameLabel", comment: "")
+        salaryLabel.text = NSLocalizedString("salaryLabel", comment: "")
+        ageLabel.text = NSLocalizedString("ageLabel", comment: "")
     }
     
 

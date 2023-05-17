@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         view.addSubview(networkIndicatior)
         do {
             let reachability = try Reachability()
-            if reachability.connection == .unavailable {
+            if /*reachability.connection == .unavailable*/ true {
                 getEmployeesFromDatabase()
             } else {
                 getEmployeesFromAPI()

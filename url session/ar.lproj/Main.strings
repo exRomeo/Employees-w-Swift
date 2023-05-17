@@ -1,0 +1,81 @@
+
+/* Class = "UITextField"; placeholder = "NAME"; ObjectID = "5KF-Yo-Uac"; */
+"5KF-Yo-Uac.placeholder" = "NAME";
+
+/* Class = "UILabel"; text = "ID :"; ObjectID = "6l6-LF-Q9F"; */
+"6l6-LF-Q9F.text" = "ID :";
+
+/* Class = "UILabel"; text = "ID :"; ObjectID = "9Uh-dH-7r1"; */
+"9Uh-dH-7r1.text" = "ID :";
+
+/* Class = "UILabel"; text = "Salary :"; ObjectID = "9nD-ia-OR0"; */
+"9nD-ia-OR0.text" = "Salary :";
+
+/* Class = "UILabel"; text = "Salary :"; ObjectID = "EZR-zf-j5O"; */
+"EZR-zf-j5O.text" = "Salary :";
+
+/* Class = "UILabel"; text = "Add"; ObjectID = "Jvk-sE-oCq"; */
+"Jvk-sE-oCq.text" = "Add";
+
+/* Class = "UILabel"; text = "DETAILS"; ObjectID = "KGc-Vt-G0A"; */
+"KGc-Vt-G0A.text" = "DETAILS";
+
+/* Class = "UILabel"; text = "Salary :"; ObjectID = "KT5-Mn-IY4"; */
+"KT5-Mn-IY4.text" = "Salary :";
+
+/* Class = "UILabel"; text = "Name :"; ObjectID = "MXU-Pp-Sq2"; */
+"MXU-Pp-Sq2.text" = "Name :";
+
+/* Class = "UITextField"; placeholder = "AGE"; ObjectID = "NQW-E8-5ek"; */
+"NQW-E8-5ek.placeholder" = "AGE";
+
+/* Class = "UITextField"; placeholder = "SALARY"; ObjectID = "WiN-qn-sZo"; */
+"WiN-qn-sZo.placeholder" = "SALARY";
+
+/* Class = "UILabel"; text = "Name :"; ObjectID = "YFT-fy-xMj"; */
+"YFT-fy-xMj.text" = "Name :";
+
+/* Class = "UILabel"; text = "Age :"; ObjectID = "Zvk-OD-an0"; */
+"Zvk-OD-an0.text" = "Age :";
+
+/* Class = "UILabel"; text = "Age :"; ObjectID = "cAt-SB-Nr9"; */
+"cAt-SB-Nr9.text" = "Age :";
+
+/* Class = "UILabel"; text = "Name :"; ObjectID = "cix-b3-9Wg"; */
+"cix-b3-9Wg.text" = "Name :";
+
+/* Class = "UITextField"; placeholder = "ID"; ObjectID = "dbY-cs-8zB"; */
+"dbY-cs-8zB.placeholder" = "ID";
+
+/* Class = "UITextField"; placeholder = "SALARY"; ObjectID = "f4S-Vc-nrT"; */
+"f4S-Vc-nrT.placeholder" = "SALARY";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hCQ-SP-5xH"; */
+"hCQ-SP-5xH.text" = "Label";
+
+/* Class = "UILabel"; text = "EDIT"; ObjectID = "iOb-4d-Ah6"; */
+"iOb-4d-Ah6.text" = "EDIT";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ncf-C0-gCB"; */
+"ncf-C0-gCB.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "NAME"; ObjectID = "nfP-QS-zzZ"; */
+"nfP-QS-zzZ.placeholder" = "NAME";
+
+/* Class = "UILabel"; text = "ID :"; ObjectID = "p5s-ez-EiM"; */
+"p5s-ez-EiM.text" = "ID :";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "qeN-9u-Gpk"; */
+"qeN-9u-Gpk.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "AGE"; ObjectID = "sz2-Oc-qaf"; */
+"sz2-Oc-qaf.placeholder" = "AGE";
+
+/* Class = "UITextField"; placeholder = "ID"; ObjectID = "tPP-hV-CcK"; */
+"tPP-hV-CcK.placeholder" = "ID";
+
+/* Class = "UILabel"; text = "Age :"; ObjectID = "usn-uo-HND"; */
+"usn-uo-HND.text" = "Age :";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "vvX-Ky-6l1"; */
+"vvX-Ky-6l1.text" = "Label";

@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  url session
+
+  Created by Ramy Ashraf on 17/05/2023.
+  
+*/
+
+"detailsLabel" = "Details";
+"addLabel" = "Add";
+"nameLabel" = "Name";
+"salaryLabel" = "Salary";
+"ageLabel" = "Age";
+"idLabel" = "ID";
+"saveButton" = "Save";
