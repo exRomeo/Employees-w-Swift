@@ -7,14 +7,14 @@
 
 import Foundation
 
-class Employee {
+class Employee: Decodable {
     
-    let id:Int
-    let employee_name: String
-    let employee_salary: Int
-    let employee_age: Int
+    let id:Int?
+    let employee_name: String?
+    let employee_salary: Int?
+    let employee_age: Int?
     
-    init(id: Int, employee_name: String, employee_salary: Int, employee_age: Int) {
+    init(id: Int?, employee_name: String?, employee_salary: Int?, employee_age: Int?) {
         self.id = id
         self.employee_name = employee_name
         self.employee_salary = employee_salary

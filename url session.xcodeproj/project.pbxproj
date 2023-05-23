@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6386E7CD6B19816D806ACB65 /* Pods_url_session.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17112D0A1F3559851DA274F /* Pods_url_session.framework */; };
+		EE1B903C2A1C991F00A5F065 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B903B2A1C991F00A5F065 /* RouterProtocol.swift */; };
+		EE1B903E2A1C993F00A5F065 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B903D2A1C993F00A5F065 /* Router.swift */; };
+		EE1B90412A1C9F1200A5F065 /* InteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B90402A1C9F1200A5F065 /* InteractorProtocol.swift */; };
+		EE1B90432A1C9FAC00A5F065 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B90422A1C9FAC00A5F065 /* Interactor.swift */; };
+		EE1B90452A1CA80000A5F065 /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B90442A1CA80000A5F065 /* PresenterProtocol.swift */; };
 		EE1D5B9C2A1113BB00EDB3BB /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D5B9B2A1113BB00EDB3BB /* Database.swift */; };
 		EEAD7F3B2A118920008A4038 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAD7F3A2A118920008A4038 /* CoreData.framework */; };
 		EEAD7F3E2A118972008A4038 /* EmployeeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEAD7F3C2A118972008A4038 /* EmployeeModel.xcdatamodeld */; };
@@ -22,12 +27,21 @@
 		EEBCA5002A0CD47800CE86E3 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBCA4FF2A0CD47800CE86E3 /* Employee.swift */; };
 		EEBCA5022A0CD63E00CE86E3 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBCA5012A0CD63E00CE86E3 /* DetailsViewController.swift */; };
 		EED1F4222A14BD6000ECE846 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EED1F4242A14BD6000ECE846 /* Localizable.strings */; };
+		EED684F12A1A1E1F00235879 /* EmployeeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED684F02A1A1E1F00235879 /* EmployeeAPI.swift */; };
+		EED684F42A1A1EF400235879 /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED684F32A1A1EF400235879 /* EmployeeModel.swift */; };
+		EED684F72A1A2BE800235879 /* EmployeesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED684F62A1A2BE800235879 /* EmployeesPresenter.swift */; };
+		EED684FB2A1A30AF00235879 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED684FA2A1A30AF00235879 /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		317DC032F6CE2323BBE4E32E /* Pods-url session.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-url session.release.xcconfig"; path = "Target Support Files/Pods-url session/Pods-url session.release.xcconfig"; sourceTree = "<group>"; };
 		8AE12399DF965B1F74AAAA34 /* Pods-url session.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-url session.debug.xcconfig"; path = "Target Support Files/Pods-url session/Pods-url session.debug.xcconfig"; sourceTree = "<group>"; };
 		A17112D0A1F3559851DA274F /* Pods_url_session.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_url_session.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1B903B2A1C991F00A5F065 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		EE1B903D2A1C993F00A5F065 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EE1B90402A1C9F1200A5F065 /* InteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorProtocol.swift; sourceTree = "<group>"; };
+		EE1B90422A1C9FAC00A5F065 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		EE1B90442A1CA80000A5F065 /* PresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
 		EE1D5B9B2A1113BB00EDB3BB /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		EE1D5B9E2A1117EA00EDB3BB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		EEAD7F3A2A118920008A4038 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -48,6 +62,10 @@
 		EED1F4262A14BD8800ECE846 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		EED1F4272A14BD8800ECE846 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EED1F4282A14C91D00ECE846 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EED684F02A1A1E1F00235879 /* EmployeeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeAPI.swift; sourceTree = "<group>"; };
+		EED684F32A1A1EF400235879 /* EmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
+		EED684F62A1A2BE800235879 /* EmployeesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesPresenter.swift; sourceTree = "<group>"; };
+		EED684FA2A1A30AF00235879 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +88,24 @@
 				317DC032F6CE2323BBE4E32E /* Pods-url session.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE1B903A2A1C990F00A5F065 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EE1B903B2A1C991F00A5F065 /* RouterProtocol.swift */,
+				EE1B903D2A1C993F00A5F065 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EE1B903F2A1C9EE700A5F065 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EE1B90402A1C9F1200A5F065 /* InteractorProtocol.swift */,
+				EE1B90422A1C9FAC00A5F065 /* Interactor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		EE1D5B9D2A1117EA00EDB3BB /* Frameworks */ = {
@@ -103,22 +139,61 @@
 		EEBCA4EA2A0CC2F300CE86E3 /* url session */ = {
 			isa = PBXGroup;
 			children = (
+				EED684FC2A1A3E3400235879 /* Services */,
+				EED684FD2A1A3E4D00235879 /* Views */,
+				EE1B903F2A1C9EE700A5F065 /* Interactor */,
+				EED684F52A1A2B6C00235879 /* Presenter */,
+				EED684F22A1A1EE100235879 /* Entity */,
+				EE1B903A2A1C990F00A5F065 /* Router */,
 				EEBCA4EB2A0CC2F300CE86E3 /* AppDelegate.swift */,
 				EEBCA4ED2A0CC2F300CE86E3 /* SceneDelegate.swift */,
-				EEBCA4EF2A0CC2F300CE86E3 /* ViewController.swift */,
 				EEBCA4F12A0CC2F300CE86E3 /* Main.storyboard */,
 				EEBCA4F42A0CC2F500CE86E3 /* Assets.xcassets */,
 				EEBCA4F62A0CC2F500CE86E3 /* LaunchScreen.storyboard */,
 				EEBCA4F92A0CC2F500CE86E3 /* Info.plist */,
-				EEBCA4FF2A0CD47800CE86E3 /* Employee.swift */,
-				EEBCA5012A0CD63E00CE86E3 /* DetailsViewController.swift */,
-				EE1D5B9B2A1113BB00EDB3BB /* Database.swift */,
 				EEAD7F3C2A118972008A4038 /* EmployeeModel.xcdatamodeld */,
-				EEAD7F3F2A11B31B008A4038 /* AddViewController.swift */,
-				EEAD7F412A11B39E008A4038 /* EmployeeDelegate.swift */,
 				EED1F4242A14BD6000ECE846 /* Localizable.strings */,
 			);
 			path = "url session";
+			sourceTree = "<group>";
+		};
+		EED684F22A1A1EE100235879 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EED684F32A1A1EF400235879 /* EmployeeModel.swift */,
+				EEBCA4FF2A0CD47800CE86E3 /* Employee.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		EED684F52A1A2B6C00235879 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EED684F62A1A2BE800235879 /* EmployeesPresenter.swift */,
+				EE1B90442A1CA80000A5F065 /* PresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EED684FC2A1A3E3400235879 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EED684F02A1A1E1F00235879 /* EmployeeAPI.swift */,
+				EE1D5B9B2A1113BB00EDB3BB /* Database.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EED684FD2A1A3E4D00235879 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EEBCA4EF2A0CC2F300CE86E3 /* ViewController.swift */,
+				EEAD7F412A11B39E008A4038 /* EmployeeDelegate.swift */,
+				EED684FA2A1A30AF00235879 /* View.swift */,
+				EEBCA5012A0CD63E00CE86E3 /* DetailsViewController.swift */,
+				EEAD7F3F2A11B31B008A4038 /* AddViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,14 +313,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE1B90412A1C9F1200A5F065 /* InteractorProtocol.swift in Sources */,
+				EED684FB2A1A30AF00235879 /* View.swift in Sources */,
+				EE1B90452A1CA80000A5F065 /* PresenterProtocol.swift in Sources */,
 				EE1D5B9C2A1113BB00EDB3BB /* Database.swift in Sources */,
 				EEBCA4F02A0CC2F300CE86E3 /* ViewController.swift in Sources */,
 				EEAD7F402A11B31B008A4038 /* AddViewController.swift in Sources */,
 				EEBCA5002A0CD47800CE86E3 /* Employee.swift in Sources */,
 				EEAD7F3E2A118972008A4038 /* EmployeeModel.xcdatamodeld in Sources */,
 				EEBCA4EC2A0CC2F300CE86E3 /* AppDelegate.swift in Sources */,
+				EE1B903E2A1C993F00A5F065 /* Router.swift in Sources */,
 				EEBCA4EE2A0CC2F300CE86E3 /* SceneDelegate.swift in Sources */,
+				EE1B903C2A1C991F00A5F065 /* RouterProtocol.swift in Sources */,
 				EEBCA5022A0CD63E00CE86E3 /* DetailsViewController.swift in Sources */,
+				EE1B90432A1C9FAC00A5F065 /* Interactor.swift in Sources */,
+				EED684F12A1A1E1F00235879 /* EmployeeAPI.swift in Sources */,
+				EED684F42A1A1EF400235879 /* EmployeeModel.swift in Sources */,
+				EED684F72A1A2BE800235879 /* EmployeesPresenter.swift in Sources */,
 				EEAD7F422A11B39E008A4038 /* EmployeeDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

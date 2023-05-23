@@ -47,26 +47,15 @@ class AddViewController: UIViewController {
     
     
     @objc func saveEmployee(){
-        var empDict = Dictionary<String, Any>()
-        
         if !idField.text!.isEmpty && !nameField.text!.isEmpty{
-            empDict[id] = Int(idField.text ?? "0")
-            empDict[name] = nameField.text ?? "N/A"
-            empDict[salary] = Int(salaryField.text ?? "0")
-            empDict[age] = Int(ageField.text ?? "0")
-            employeeDelegate?.saveEmployee(employee: empDict)
+            employeeDelegate?
+                .saveEmployee(
+                    employee: Employee(id: Int(idField.text ?? "0"),
+                                       employee_name: nameField.text ?? "N/A",
+                                       employee_salary: Int(salaryField.text ?? "0"),
+                                       employee_age: Int(ageField.text ?? "0"))
+                )
             navigationController?.popViewController(animated: true)
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

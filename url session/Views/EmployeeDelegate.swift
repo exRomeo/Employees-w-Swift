@@ -9,5 +9,5 @@ import Foundation
 
 protocol EmployeeDelegate {
     
-    func saveEmployee(employee: [String: Any])
+    func saveEmployee(employee: Employee)
 }

@@ -22,10 +22,10 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var employee_age: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        employee_id.text = String(employee.id)
-        employee_name.text = employee.employee_name
-        employee_salary.text = String(employee.employee_salary)
-        employee_age.text = String(employee.employee_age)
+        employee_id.text = String(employee.id!)
+        employee_name.text = employee.employee_name!
+        employee_salary.text = String(employee.employee_salary!)
+        employee_age.text = String(employee.employee_age!)
         
         detailsLabel.text = NSLocalizedString("detailsLabel", comment: "")
         idLabel.text = NSLocalizedString("idLabel", comment: "")
